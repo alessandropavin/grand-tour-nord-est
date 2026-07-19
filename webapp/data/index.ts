@@ -1,4 +1,5 @@
 import { monacoData } from './monaco'
+import { berlinoData } from './berlino'
 
 export interface TimelineItem {
   time: string
@@ -6,6 +7,7 @@ export interface TimelineItem {
   description: string
   location: string
   note?: string
+  highlight?: string
   restaurants?: Array<{
     name: string
     address: string
@@ -48,6 +50,7 @@ export interface Tour {
   status?: string
   infoTable: InfoItem[]
   day1: TimelineItem[]
+  day2: TimelineItem[]
   day2Options: Day2Option[]
   restaurants: Restaurant[]
   checklist: string[]
@@ -56,5 +59,5 @@ export interface Tour {
 
 export const tours: Record<string, Tour> = {
   monaco: monacoData,
-  // berlino verrà aggiunto qui
+  berlino: berlinoData,
 }
