@@ -50,7 +50,7 @@ export interface Tour {
   status?: string
   infoTable: InfoItem[]
   day1: TimelineItem[]
-  day2: TimelineItem[]
+  day2?: TimelineItem[]
   day2Options: Day2Option[]
   restaurants: Restaurant[]
   checklist: string[]

@@ -92,7 +92,7 @@ export default function ChatBot({ tour, tappaN }: ChatBotProps) {
       const errorMessage: Message = {
         id: (Date.now() + 2).toString(),
         role: 'assistant',
-        content: `Scusa, c\'è stato un errore: ${error instanceof Error ? error.message : 'Unknown error'}`,
+        content: `Scusa, c'è stato un errore: ${error instanceof Error ? error.message : 'Unknown error'}`,
         timestamp: new Date(),
       }
       setMessages((prev) => [...prev, errorMessage])
@@ -143,9 +143,9 @@ export default function ChatBot({ tour, tappaN }: ChatBotProps) {
                 {message.content}
               </p>
               <span className="text-xs mt-1 block opacity-70">
-                {message.timestamp.toLocaleTimeString(\'it-IT\', {
-                  hour: \'2-digit\',
-                  minute: \'2-digit\',
+                {message.timestamp.toLocaleTimeString('it-IT', {
+                  hour: '2-digit',
+                  minute: '2-digit',
                 })}
               </span>
             </div>
@@ -183,7 +183,7 @@ export default function ChatBot({ tour, tappaN }: ChatBotProps) {
             disabled={isLoading || !input.trim()}
             className="bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
           >
-            {isLoading ? \'...\' : \'Invia\'}
+            {isLoading ? '...' : 'Invia'}
           </button>
         </form>
 

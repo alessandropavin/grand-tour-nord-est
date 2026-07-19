@@ -2,7 +2,7 @@ import Anthropic from '@anthropic-ai/sdk'
 import { tours } from '@/data'
 
 const client = new Anthropic({
-  apiKey: process.env.NEXT_PUBLIC_CLAUDE_API_KEY,
+  apiKey: process.env.CLAUDE_API_KEY,
 })
 
 function buildSystemPrompt(tappaN: string): string {

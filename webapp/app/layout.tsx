@@ -1,10 +1,14 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import './globals.css'
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+}
 
 export const metadata: Metadata = {
   title: 'Grand Tour Nord-Est | Guida interattiva con Claude AI',
   description: 'Scopri l\'Europa con assistenza personalizzata di Claude AI. Monaco, Berlino e oltre.',
-  viewport: 'width=device-width, initial-scale=1',
   icons: {
     icon: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">🚗</text></svg>',
   },

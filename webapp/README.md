@@ -20,7 +20,7 @@ cp .env.local.example .env.local
 
 Edita `.env.local`:
 ```
-NEXT_PUBLIC_CLAUDE_API_KEY=sk-ant-xxxxxxxxx
+CLAUDE_API_KEY=sk-ant-xxxxxxxxx
 ```
 
 Ottieni la tua API Key da: https://console.anthropic.com

@@ -13,8 +13,8 @@ export default function TourMenu() {
       <div className="container mx-auto px-4 py-16">
         <div className="text-center mb-12">
           <h1 className="text-5xl md:text-6xl font-bold mb-4">🌍 Grand Tour Nord-Est</h1>
-          <p className="text-xl md:text-2xl text-blue-100 mb-2">Scopri l\'Europa con Claude AI</p>
-          <p className="text-blue-100">Un viaggio attraverso i gioielli dell\'Europa centrale</p>
+          <p className="text-xl md:text-2xl text-blue-100 mb-2">Scopri l'Europa con Claude AI</p>
+          <p className="text-blue-100">Un viaggio attraverso i gioielli dell'Europa centrale</p>
         </div>
 
         {/* Tour Cards */}
@@ -26,7 +26,7 @@ export default function TourMenu() {
               onMouseEnter={() => setHoveredTour(key)}
               onMouseLeave={() => setHoveredTour(null)}
               className={`group relative bg-white text-gray-800 rounded-lg shadow-lg overflow-hidden transition-all duration-300 ${
-                hoveredTour === key ? \'scale-105 shadow-2xl\' : \'hover:shadow-xl\'
+                hoveredTour === key ? 'scale-105 shadow-2xl' : 'hover:shadow-xl'
               }`}
             >
               {/* Card Background */}
